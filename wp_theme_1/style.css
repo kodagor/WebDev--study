@@ -1,0 +1,160 @@
+/* Theme name: my-theme-example */
+/* Author: hooDev */
+
+/*========================*/
+/* reusable */
+/*========================*/
+
+header, section, footer, aside, nav, article, figure, figcaption {
+  display: block;
+}
+body {
+  color: #666;
+  background-color: #f9f8f6;
+  font-family: Georgia, Times, serif;
+  line-height: 1.4em;
+  margin: 0px;
+}
+.wrapper {
+  width: 940px;
+  margin: auto;
+  background-color: #fff;
+}
+
+/*========================*/
+/* Header */
+/*========================*/
+
+header {
+  height: 200px;
+  background-color: #e2e2e2;
+  background-image: url(images/logo.png);
+  background-size: auto;
+}
+h1 {
+  text-indent: -9999px;
+  width: 940px;
+  height: 160px;
+  margin: 0px;
+}
+header nav, footer {
+  clear: both;
+  color: #fff;
+  background-color: #aeaca8;
+  height: 30px;
+}
+ header nav ul {
+  margin: 10px 0 0 0;
+  padding: 5px 0px 5px 30px;
+}
+ header nav li {
+  display: inline;
+  margin-right: 40px;
+}
+header nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+header nav li a:hover {
+  color: #000;
+}
+
+/*========================*/
+/* Entries */
+/*========================*/
+
+section.entries {
+  float: left;
+  width: 659px;
+  border-right: 1px solid #eee;
+  padding-bottom: 10px;
+}
+article {
+  clear: both;
+  width: 100%;
+}
+.container {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+aside {
+  width: 230px;
+  float: left;
+  padding-left: 20px;
+}
+aside section a {
+  display: block;
+  padding: 10px 0px;
+  border-bottom: 1px solid #eee;
+}
+aside section a:hover {
+  color: #20638f;
+  background-color: #efefef;
+}
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+h1,h2,h3 {
+  font-weight: normal;
+}
+h2 {
+  margin: 10px 0px 5px 0px;
+}
+h3 {
+  margin: 0px 0px 10px 0px;
+  color: #20638f;
+}
+aside h2 {
+  padding: 30px 0px 10px 0px;
+  color: #20638f;
+}
+aside ul {
+  list-style: none;
+  margin-left: -40px;
+}
+footer {
+  font-size: 80%;
+  padding: 7px 0px 0px 20px;
+}
+
+@media all and (max-width: 939px) {
+  .wrapper {width: 100%;}
+  h1 {
+    text-indent: -9999px;
+    width: 100%;
+  }
+  header {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  section.entries {
+    padding: 10px 0;    
+    float: none;
+    width: 100%;
+    border-right: none;
+  }
+  figure {
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+  figcaption {
+    display: none;
+  }
+  aside h2, h3, p, section a{
+    padding: 0 15px; 
+  }
+  article {
+    margin-bottom: 15px;
+  }
+  aside {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  aside h2, aside a, aside p{
+    text-align: center;
+  }
+}
